@@ -92,8 +92,8 @@
                 </div>
             </div>
             <div class="carousel-controls">
-                <button class="carousel-control" onclick="moveCarousel(-1)">❮</button>
-                <button class="carousel-control" onclick="moveCarousel(1)">❯</button>
+                <button class="carousel-control" onclick="moveCarousel(-1)"></button>
+                <button class="carousel-control" onclick="moveCarousel(1)"></button>
             </div>
         </div>
 
@@ -123,7 +123,7 @@
     <script>
         let currentSlide = 0;
         const items = document.querySelectorAll('.carousel-item');
-        
+
         function moveCarousel(direction) {
             currentSlide = (currentSlide + direction + items.length) % items.length;
             document.querySelector('.carousel-inner').style.transform = 
