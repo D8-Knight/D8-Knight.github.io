@@ -45,11 +45,11 @@ class Header extends HTMLElement {
                 <nav>
                     <ul class="nav-links">
                         <li><a href="/index.html" class="${currentPage === 'index.html' ? 'active' : ''}">Home</a></li>
-                        <li><a href="/pages/Gameplay.html" class="${currentPage === 'Gameplay.html' ? 'active' : ''}">Gameplay</a></li>
-                        <li><a href="/pages/Cuisine.html" class="${currentPage === 'Cuisine.html' ? 'active' : ''}">Cuisine</a></li>
-                        <li><a href="/pages/Souvenirs.html" class="${currentPage === 'Souvenirs.html' ? 'active' : ''}">Souvenirs</a></li>
-                        <li><a href="/pages/Booking.html" class="${currentPage === 'Booking.html' ? 'active' : ''}">Book Now</a></li>
-                        <li><a href="/pages/Contact.html" class="${currentPage === 'Contact.html' ? 'active' : ''}">Contact</a></li>
+                        <li><a href="/Gameplay.html" class="${currentPage === 'Gameplay.html' ? 'active' : ''}">Gameplay</a></li>
+                        <li><a href="/Cuisine.html" class="${currentPage === 'Cuisine.html' ? 'active' : ''}">Cuisine</a></li>
+                        <li><a href="/Souvenirs.html" class="${currentPage === 'Souvenirs.html' ? 'active' : ''}">Souvenirs</a></li>
+                        <li><a href="/Booking.html" class="${currentPage === 'Booking.html' ? 'active' : ''}">Book Now</a></li>
+                        <li><a href="/Contact.html" class="${currentPage === 'Contact.html' ? 'active' : ''}">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -78,21 +78,11 @@ class Footer extends HTMLElement {
             </style>
             <footer>
                 <div class="social-links">
-                    <a href="http://discord.d8-knight.com" target="_blank">
-                        <img src="/assets/Social Links/Discord Stamp.png" alt="Discord">
-                    </a>
-                    <a href="http://tiktok.d8-knight.com" target="_blank">
-                        <img src="/assets/Social Links/Tiktok Stamp.png" alt="TikTok">
-                    </a>
-                    <a href="http://x.d8-knight.com" target="_blank">
-                        <img src="/assets/Social Links/X Stamp.png" alt="X">
-                    </a>
-                    <a href="http://instagram.d8-knight.com" target="_blank">
-                        <img src="/assets/Social Links/Instagram Stamp.png" alt="Instagram">
-                    </a>
-                    <a href="http://youtube.d8-knight.com" target="_blank">
-                        <img src="/assets/Social Links/Youtube Stamp.png" alt="YouTube">
-                    </a>
+                    <img src="/assets/Social Links/Discord Stamp.png" alt="Discord" onclick="window.open('http://discord.d8-knight.com', '_blank')">
+                    <img src="/assets/Social Links/Tiktok Stamp.png" alt="TikTok" onclick="window.open('http://tiktok.d8-knight.com', '_blank')">
+                    <img src="/assets/Social Links/X Stamp.png" alt="X" onclick="window.open('http://x.d8-knight.com', '_blank')">
+                    <img src="/assets/Social Links/Instagram Stamp.png" alt="Instagram" onclick="window.open('http://instagram.d8-knight.com', '_blank')">
+                    <img src="/assets/Social Links/Youtube Stamp.png" alt="YouTube" onclick="window.open('http://youtube.d8-knight.com', '_blank')">
                 </div>
             </footer>
         `;

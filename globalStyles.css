@@ -4,9 +4,9 @@
 :root {
     --main-color: #d80000;
     --background-color: #1a1a1a;
-    --text-color: #ffffff;
     --secondary-background: #2a2a2a;
-    --highlight-color: #d80000;
+    --text-color: #ffffff;
+    --highlight-color: #ff0000;
     --font-family: 'Arial', sans-serif;
 }
 
