@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D8 Knight - Mixed Reality Medieval Fantasy</title>
+    <script src="components.js"></script>
+    <link rel="stylesheet" type="text/css" href="globalStyles.css">
+    <style>
+        .hero {
+            height: 100vh;
+            background-image: url('assets/Middle Age Tapestry on Parchment.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 1rem;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            padding: 1.5rem;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+        }
+
+        .highlight {
+            color: var(--main-color);
+        }
+    </style>
+</head>
+<body>
+    <d8-header></d8-header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1><span class="highlight">D8 Knight</span></h1>
+                <p class="tagline">Step into a Medieval Fantasy Adventure</p>
+                <a href="/pages/Booking.html" class="cta-button">Begin Your Quest</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Experience the <span class="highlight">Magic</span></h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3><span class="highlight">Immersive</span> <br>Gameplay</h3>
+                    <p>Step into mixed reality medieval fantasy adventures with cutting-edge technology for an entertaining experience with friends</p>
+                </div>
+                <div class="feature">
+                    <h3><span class="highlight">Thematic</span> <br>Cuisine</h3>
+                    <p>Feast on delicious gourmet stylized food and thirst-quenching beverages!</p>
+                </div>
+                <div class="feature">
+                    <h3><span class="highlight">Personalized</span> <br>Souvenirs</h3>
+                    <p>Take home skilled artisan treasures built just for you, craft your own equipment, or browse works from local artists</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <d8-footer></d8-footer>
+</body>
+</html>

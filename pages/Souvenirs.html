@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D8 Knight - Souvenirs</title>
+    <script src="../components.js"></script>
+    <link rel="stylesheet" type="text/css" href="../globalStyles.css">
+    <style>
+        .souvenir-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .souvenir-item {
+            background-color: var(--secondary-background);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .souvenir-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .souvenir-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .souvenir-info {
+            padding: 1.5rem;
+        }
+
+        .souvenir-info h3 {
+            margin: 0 0 1rem 0;
+            color: var(--main-color);
+        }
+
+        .souvenir-info p {
+            margin: 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <d8-header></d8-header>
+
+    <main>
+        <h1>Take Home the <span class="highlight">Magic</span></h1>
+        
+        <div class="souvenir-grid">
+            <div class="souvenir-item">
+                <img src="https://placehold.co/400x300/2a2a2a/ffffff?text=Handcrafted+Weapons" alt="Handcrafted Weapons" class="souvenir-image">
+                <div class="souvenir-info">
+                    <h3>Handcrafted Weapons</h3>
+                    <p>Custom-made replica weapons forged by skilled artisans</p>
+                </div>
+            </div>
+
+            <div class="souvenir-item">
+                <img src="https://placehold.co/400x300/2a2a2a/ffffff?text=Medieval+Jewelry" alt="Medieval Jewelry" class="souvenir-image">
+                <div class="souvenir-info">
+                    <h3>Medieval Jewelry</h3>
+                    <p>Authentic medieval-style jewelry pieces</p>
+                </div>
+            </div>
+
+            <div class="souvenir-item">
+                <img src="https://placehold.co/400x300/2a2a2a/ffffff?text=Fantasy+Artwork" alt="Fantasy Artwork" class="souvenir-image">
+                <div class="souvenir-info">
+                    <h3>Fantasy Artwork</h3>
+                    <p>Original artwork from local fantasy artists</p>
+                </div>
+            </div>
+
+            <div class="souvenir-item">
+                <img src="https://placehold.co/400x300/2a2a2a/ffffff?text=Costume+Accessories" alt="Costume Accessories" class="souvenir-image">
+                <div class="souvenir-info">
+                    <h3>Costume Accessories</h3>
+                    <p>Complete your medieval look with our authentic accessories</p>
+                </div>
+            </div>
+
+            <div class="souvenir-item">
+                <img src="https://placehold.co/400x300/2a2a2a/ffffff?text=Crafting+Kits" alt="Crafting Kits" class="souvenir-image">
+                <div class="souvenir-info">
+                    <h3>Crafting Kits</h3>
+                    <p>Create your own medieval items with our DIY kits</p>
+                </div>
+            </div>
+
+            <div class="souvenir-item">
+                <img src="https://placehold.co/400x300/2a2a2a/ffffff?text=Collectibles" alt="Collectibles" class="souvenir-image">
+                <div class="souvenir-info">
+                    <h3>Collectibles</h3>
+                    <p>Limited edition fantasy collectibles and memorabilia</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <d8-footer></d8-footer>
+</body>
+</html>

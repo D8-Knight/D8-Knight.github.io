@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D8 Knight - Contact</title>
+    <script src="../components.js"></script>
+    <link rel="stylesheet" type="text/css" href="../globalStyles.css">
+    <style>
+        .contact-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info, .contact-form {
+            background-color: var(--secondary-background);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            background-color: #1a1a1a;
+            border: 1px solid #444;
+            color: #ffffff;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            background-color: var(--main-color);
+            color: var(--text-color);
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit-button:hover {
+            background-color: #b30000;
+        }
+    </style>
+</head>
+<body>
+    <d8-header></d8-header>
+    <main>
+        <section class="contact-section">
+            <h1>Contact <span class="highlight">Us</span></h1>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about D8 Knight?
+                    <br>We'd love to hear from you!</p>
+                    
+                    <p><span class="highlight"><strong>Address:</strong></span><br>
+                    [N/A]<br>
+                    Murfreesboro, TN</p>
+                    <p><span class="highlight"><strong>Phone:</strong></span><br>
+                    [N/A]</p>
+                    <p><span class="highlight"><strong>Email:</strong></span><br>
+                    <a href="mailto:d8knight.business@gmail.com" style="text-decoration: none !important; color:inherit">d8knight.business@gmail.com</a></p>
+                </div>
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <d8-footer></d8-footer>
+</body>
+</html>

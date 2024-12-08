@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D8 Knight - Gameplay</title>
+    <script src="../components.js"></script>
+    <link rel="stylesheet" type="text/css" href="../globalStyles.css">
+    <style>
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            padding: 1rem;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-control {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .gameplay-description {
+            padding: 2rem;
+            background-color: var(--secondary-background);
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .feature-card {
+            background-color: #2a2a2a;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <d8-header></d8-header>
+
+    <main>
+        <h1>Experience the <span class="highlight">Adventure</span></h1>
+
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://placehold.co/800x400/2a2a2a/ffffff?text=Mixed+Reality+Combat" alt="Mixed Reality Combat">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/800x400/2a2a2a/ffffff?text=Puzzle+Solving" alt="Puzzle Solving">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/800x400/2a2a2a/ffffff?text=Team+Challenges" alt="Team Challenges">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-control" onclick="moveCarousel(-1)">❮</button>
+                <button class="carousel-control" onclick="moveCarousel(1)">❯</button>
+            </div>
+        </div>
+
+        <div class="gameplay-description">
+            <h2>Your <span class="highlight">Quest</span> Awaits</h2>
+            <p>Step into a world where fantasy meets reality. Our cutting-edge mixed reality technology transforms ordinary spaces into extraordinary adventures. Battle mythical creatures, solve ancient puzzles, and embark on epic quests with your fellow adventurers.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Mixed Reality <span class="highlight">Combat</span></h3>
+                <p>Experience thrilling battles with state-of-the-art mixed reality technology</p>
+            </div>
+            <div class="feature-card">
+                <h3>Team <span class="highlight">Challenges</span></h3>
+                <p>Work together with friends to overcome obstacles and complete quests</p>
+            </div>
+            <div class="feature-card">
+                <h3>Puzzle <span class="highlight">Solving</span></h3>
+                <p>Test your wit with intricate puzzles and mysteries</p>
+            </div>
+        </div>
+    </main>
+
+    <d8-footer></d8-footer>
+
+    <script>
+        let currentSlide = 0;
+        const items = document.querySelectorAll('.carousel-item');
+        
+        function moveCarousel(direction) {
+            currentSlide = (currentSlide + direction + items.length) % items.length;
+            document.querySelector('.carousel-inner').style.transform = 
+                `translateX(-${currentSlide * 100}%)`;
+        }
+
+        // Auto-advance carousel
+        let delayInSeconds = 10
+        setInterval(() => moveCarousel(1), 1000 * delayInSeconds);
+    </script>
+</body>
+</html>

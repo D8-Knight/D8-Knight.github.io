@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D8 Knight - Cuisine</title>
+    <script src="../components.js"></script>
+    <link rel="stylesheet" type="text/css" href="../globalStyles.css">
+    <style>
+        .cuisine-gallery {
+            padding: 2rem;
+        }
+    
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+    
+        .gallery-item {
+            background-color: var(--secondary-background);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+    
+        .menu {
+            padding: 2rem;
+        }
+    
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        .menu li {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <d8-header></d8-header>
+
+    <main>
+        <h1>Explore Our Thematic Cuisine</h1>
+        <section class="cuisine-gallery">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://placehold.co/300x200/2a2a2a/ffffff?text=Dish+1" alt="Dish 1">
+                    <p>Dish 1 Description</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/300x200/2a2a2a/ffffff?text=Dish+2" alt="Dish 2">
+                    <p>Dish 2 Description</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/300x200/2a2a2a/ffffff?text=Dish+3" alt="Dish 3">
+                    <p>Dish 3 Description</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/300x200/2a2a2a/ffffff?text=Dish+4" alt="Dish 4">
+                    <p>Dish 4 Description</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/300x200/2a2a2a/ffffff?text=Dish+5" alt="Dish 5">
+                    <p>Dish 5 Description</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/300x200/2a2a2a/ffffff?text=Dish+6" alt="Dish 6">
+                    <p>Dish 6 Description</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><strong><span class="highlight">Appetizers</span></strong>
+                    <ul>
+                        <li>Basilisk's Petrified Eggs</li>
+                        <li>Mage's Mana Muffins</li>
+                    </ul>
+                </li>
+                <li><strong><span class="highlight">Beverages</span></strong>
+                    <ul>
+                        <li>Blazebrew Wizardry Whisky</li>
+                        <li>Unicorn Tears</li>
+                    </ul>
+                </li>
+                <li><strong><span class="highlight">Breads</span></strong>
+                    <ul>
+                        <li>Dragon's Breath Baguette</li>
+                        <li>Elven Honey Wheat Rolls</li>
+                    </ul>
+                </li>
+                <li><strong><span class="highlight">Condiments</span></strong>
+                    <ul>
+                        <li>Diablo Guacamole</li>
+                        <li>Giant's Toe Jam</li>
+                    </ul>
+                </li>
+                <li><strong><span class="highlight">Desserts</span></strong>
+                    <ul>
+                        <li>Celestial Cinnamon Rolls</li>
+                        <li>Dragon's Fire Cake Balls</li>
+                    </ul>
+                </li>
+                <li><strong><span class="highlight">Entrees</span></strong>
+                    <ul>
+                        <li>Behemoth Burger</li>
+                        <li>Harpy Egg Omlet</li>
+                    </ul>
+                </li>
+                <li><strong><span class="highlight">Salad</span></strong>
+                    <ul>
+                        <li>Beholder's Eye Salad</li>
+                        <li>Feywild Fruit Salad</li>
+                    </ul>
+                </li>
+                <li><strong><span class="highlight">Seasoning</span></strong>
+                    <ul>
+                        <li>Phoenix Ashes</li>
+                        <li>Vampire Hunter's Garlic Powder</li>
+                    </ul>
+                </li>
+                <li><strong><span class="highlight">Snacks</span></strong>
+                    <ul>
+                        <li>Chimera Charcuterie</li>
+                        <li>Enchanted Apple</li>
+                    </ul>
+                </li>
+                <li><strong><span class="highlight">Soup</span></strong>
+                    <ul>
+                        <li>Gorgon's Goulash</li>
+                        <li>Mystical Miso</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <d8-footer></d8-footer>
+</body>
+</html>
